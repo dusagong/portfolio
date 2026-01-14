@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getProjectById } from '../data/projects';
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
   const project = id ? getProjectById(id) : undefined;
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   if (!project) {
     return (
@@ -93,10 +95,25 @@ export default function ProjectDetail() {
             <h2>스크린샷</h2>
             <div className="screenshots-grid">
               {project.images.map((image, index) => (
-                <img key={index} src={image} alt={`${project.title} 스크린샷 ${index + 1}`} />
+                <img
+                  key={index}
+                  src={image}
+                  alt={`${project.title} 스크린샷 ${index + 1}`}
+                  onClick={() => setSelectedImage(image)}
+                  style={{ cursor: 'pointer' }}
+                />
               ))}
             </div>
           </section>
+        )}
+
+        {selectedImage && (
+          <div className="image-modal" onClick={() => setSelectedImage(null)}>
+            <div className="image-modal-content">
+              <img src={selectedImage} alt="확대 이미지" />
+              <button className="image-modal-close" onClick={() => setSelectedImage(null)}>×</button>
+            </div>
+          </div>
         )}
 
         {project.links && project.links.length > 0 && (
