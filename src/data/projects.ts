@@ -56,6 +56,9 @@ export const projects: Project[] = [
       '/portfolio/projects/button/6.png',
       '/portfolio/projects/button/7.png',
       '/portfolio/projects/button/8.png',
+      '/portfolio/projects/button/9.png',
+      '/portfolio/projects/button/10.png',
+      '/portfolio/projects/button/11.png',
     ],
   },
 
