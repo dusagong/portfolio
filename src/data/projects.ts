@@ -83,7 +83,7 @@ export const projects: Project[] = [
     ],
     techStack: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'Prisma', 'Redis', 'Docker', 'Nginx', 'Socket.IO', 'Prometheus', 'Grafana'],
     metrics: [
-      { label: '커밋', value: '250+' },
+      { label: '커밋', value: '248개' },
       { label: 'PR 작성', value: '53개' },
       { label: 'PR 리뷰', value: '80+' },
     ],
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     ],
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Preact Signals', 'Firebase'],
     metrics: [
-      { label: '커밋', value: '168+' },
+      { label: '커밋', value: '159개' },
       { label: 'PR 작성', value: '29개' },
       { label: '누적 트래픽', value: '1.5만' },
     ],
