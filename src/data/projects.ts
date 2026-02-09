@@ -64,48 +64,61 @@ export const projects: Project[] = [
 
   // 사이드 프로젝트 - 팀 블루베리
   {
+    id: 'foodimo',
+    title: 'Foodimo (베리오더)',
+    category: 'side',
+    period: '2025.01 ~ 2025.08 (약 7개월)',
+    shortDesc: '팀 블루베리 - 식당 주문 관리 시스템 백엔드',
+    description:
+      '식당 주문 관리 시스템의 백엔드를 핵심 개발자로 참여했습니다. Clean Architecture 기반 전면 리팩토링, Docker 인프라 구축, Blue-Green 무중단 배포 등 백엔드 전반을 담당했습니다.',
+    highlights: [
+      'Clean Architecture 전면 리팩토링 (UseCase/Repository/Entity 계층 분리)',
+      'Docker + Nginx + SSL/TLS 인프라 구축 (TLS 1.3 + HSTS)',
+      'Blue-Green 무중단 배포 전략 구현',
+      '버전 기반 주문 부분 취소 시스템 설계',
+      'Prometheus + Grafana 모니터링 대시보드 구축',
+      'JWT 인증 + 2차 비밀번호 체계 구현',
+      'E2E 테스트 커버리지 확보 (Jest + Supertest)',
+      'Swagger API 문서화',
+    ],
+    techStack: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'Prisma', 'Redis', 'Docker', 'Nginx', 'Socket.IO', 'Prometheus', 'Grafana'],
+    metrics: [
+      { label: '커밋', value: '250+' },
+      { label: 'PR 작성', value: '53개' },
+      { label: 'PR 리뷰', value: '80+' },
+    ],
+    links: [
+      { label: '서비스 홈페이지', url: 'https://www.foodimo-app.com/' },
+    ],
+  },
+  {
     id: 'poketree',
     title: 'PokeTree',
     category: 'side',
-    period: '시즌1: 2024.12 / 시즌2: 2025.11~12',
-    shortDesc: '팀 블루베리 - 누적 1.5만 트래픽 롤링페이퍼 웹서비스',
+    period: 'v1: 2024.12 (2주) / v2: 2025.11~12 (6주)',
+    shortDesc: '팀 블루베리 - 크리스마스 시즌 포켓몬 + 익명 편지 웹서비스',
     description:
-      '크리스마스/새해 시즌에 맞춰 3개국(한국, 일본, 미국)을 대상으로 출시한 롤링페이퍼 웹서비스입니다. 시즌1에서 마케팅과 UX의 한계를 느끼고, 시즌2에서 디자이너/마케터와 협업하여 전면 리뉴얼했습니다.',
+      '크리스마스 시즌 한정 포켓몬 + 익명 편지 웹 서비스입니다. v1(React)에서 v2(Next.js 16)로 풀 리빌드하며 Feature-based 아키텍처, 9개 언어 i18n 시스템 등을 직접 구현했습니다.',
     highlights: [
-      'React 프론트엔드 개발',
-      '다국어 지원 (한국어, 일본어, 영어)',
-      '[시즌1] UX 흐름에 대한 사용자 피드백 수집 및 한계점 분석',
-      '[시즌2] 디자이너/마케터 협업으로 전면 리뉴얼',
+      '[v2] React + Vite → Next.js 16 + React 19 풀 리빌드',
+      '[v2] Feature-based 모듈 아키텍처 도입 (UseCase/Repository/Model)',
+      '[v2] 라이브러리 없이 9개 언어 커스텀 i18n 시스템 구현',
+      '[v2] SSR/Hydration 이슈 해결',
+      '[v2] 언어별 커스텀 폰트 시스템 구축 (UI 깨짐 대응)',
+      '포켓몬 도감(5×5 그리드), QR 코드 공유, 익명 편지 기능',
       '누적 트래픽 1.5만 달성',
     ],
-    techStack: ['React', 'TypeScript'],
+    techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Preact Signals', 'Firebase'],
     metrics: [
+      { label: '커밋', value: '168+' },
+      { label: 'PR 작성', value: '29개' },
       { label: '누적 트래픽', value: '1.5만' },
-      { label: '시즌', value: '2회 운영' },
     ],
     links: [
       { label: '서비스', url: 'https://www.poketrees.com/' },
       { label: 'GitHub', url: 'https://github.com/blueberry-team/blueberry_poketree' },
     ],
     videos: ['/portfolio/projects/poketree/demo.mp4'],
-  },
-  {
-    id: 'foodimo',
-    title: 'Foodimo',
-    category: 'side',
-    period: '2025.01 ~ 2025.06',
-    shortDesc: '팀 블루베리 - 테이블 오더 태블릿 프로그램',
-    description:
-      '음식점용 테이블 오더 태블릿 프로그램입니다. 백엔드를 전담하여 REST API 설계부터 인프라 구성, 테스트 및 문서화까지 담당했습니다.',
-    highlights: [
-      '[BE] REST API 설계 및 개발 (백엔드 전담)',
-      '[BE] TypeScript, PostgreSQL, Docker, Nginx로 인프라 구성',
-      '[BE] 테스트코드 작성 및 Swagger API 문서화',
-    ],
-    techStack: ['Flutter', 'TypeScript', 'PostgreSQL', 'Docker', 'Nginx', 'Swagger'],
-    links: [
-      { label: '서비스 홈페이지', url: 'https://www.foodimo-app.com/' },
-    ],
   },
   {
     id: 'blueberry-template',
