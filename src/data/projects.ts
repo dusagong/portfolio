@@ -152,7 +152,7 @@ export const projects: Project[] = [
     id: 'coolcoolcall',
     title: '쿨쿨콜 (CoolCoolCall)',
     category: 'university',
-    period: '2023.09 ~ 2024.03 (약 6개월)',
+    period: '2023.09 ~ 2023.10 (약 2개월)',
     shortDesc: 'AI 음성 통화 기반 수면 보조 앱 (개인 프로젝트)',
     description:
       '불면증 사용자를 위한 AI 음성 통화 기반 수면 보조 앱입니다. OpenAI GPT를 Fine-tuning하여 수면 보조에 특화된 자연스러운 대화를 구현하고, 실제 전화처럼 느껴지는 UX를 설계했습니다.',
@@ -184,7 +184,7 @@ export const projects: Project[] = [
     id: 'ptmanager',
     title: 'ptManager (PT 매니저)',
     category: 'university',
-    period: '2023.06 ~ 2024.02 (약 8개월)',
+    period: '2023.06 ~ 2023.09 (약 3개월)',
     shortDesc: 'PT 트레이너-회원 양방향 관리 앱 (2인 협업)',
     description:
       'PT 트레이너와 회원을 위한 양방향 관리 앱입니다. 하나의 앱에서 트레이너/회원 이중 모드로 동작하며, 스케줄 관리, 식단 기록(사진 포함), 운동 통계 시각화 기능을 제공합니다.',
