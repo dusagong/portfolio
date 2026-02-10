@@ -9,7 +9,7 @@ export default function Awards() {
   ];
 
   return (
-    <section>
+    <section id="awards">
       <div className="container">
         <h2>수상</h2>
 

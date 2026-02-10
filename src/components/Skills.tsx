@@ -35,7 +35,7 @@ export default function Skills() {
   ];
 
   return (
-    <section>
+    <section id="skills">
       <div className="container">
         <h2>기술 스택</h2>
 

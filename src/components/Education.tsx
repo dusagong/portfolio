@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <section>
+    <section id="education">
       <div className="container">
         <h2>학력</h2>
 
